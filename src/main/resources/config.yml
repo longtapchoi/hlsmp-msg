@@ -1,0 +1,25 @@
+# HLSMP-MSG config.yml
+# Permissions: msg.reload | msg.use
+
+messages:
+  no-permission: "&cBạn không có quyền thực hiện lệnh này!"
+  plugin-reloaded: "&#0bf52bHLSMP-MSG đã được tải lại!"
+  blocked: "&fĐã chặn tin nhắn từ &#00a3fb%player%"
+  unblocked: "&fĐã bỏ chặn tin nhắn từ &#00a3fb%player%"
+  msg-normal: "&#00a3fb%sender% &8&l→ &#00a3fb%receiver%&8: &f%message%"
+  msg-blocked: "&fBạn không thể nhắn tin cho &#00a3fb%player% &fvì họ đã &cchặn &fbạn"
+  msg-toggle-on: "&fĐã &aBẬT &fnhận tin nhắn riêng tư"
+  msg-toggle-off: "&fĐã &cTẮT &fnhận tin nhắn riêng tư"
+  msg-toggle-player: "&#00a3fb%player% &fđã tắt nhận tin nhắn riêng tư. Thử lại sau!"
+  usage-msg: "&cCách dùng: /msg <người chơi> <tin nhắn>"
+  usage-msgblock: "&cCách dùng: /msgblock <người chơi>"
+  usage-msgunblock: "&cCách dùng: /msgunblock <người chơi>"
+  self-message: "&cBạn không thể nhắn tin cho chính mình!"
+  self-block: "&cBạn không thể chặn chính mình!"
+  no-target: "&cKhông tìm thấy người chơi!"
+
+tab-suggestions:
+  msg:
+    - "<tin nhắn>"
+  reply:
+    - "<tin nhắn>"

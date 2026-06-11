@@ -1,0 +1,29 @@
+name: HLSMP-MSG
+version: '1.1'
+main: de.elivb.donutMSG.DonutMSG
+api-version: '1.21'
+author: EliVB
+description: MSG plugin for HLSMP
+folia-supported: true
+
+commands:
+  msg:
+    aliases: [tell, whisper, w]
+    description: Nhắn tin riêng tư
+  reply:
+    aliases: [r]
+    description: Trả lời tin nhắn gần nhất
+  msgblock:
+    description: Chặn tin nhắn từ người chơi
+  msgunblock:
+    description: Bỏ chặn tin nhắn
+  msgtoggle:
+    description: Bật/tắt nhận tin nhắn riêng tư
+  hlsmpmsg:
+    description: Quản lý plugin HLSMP-MSG
+
+permissions:
+  msg.reload:
+    default: op
+  msg.use:
+    default: true
