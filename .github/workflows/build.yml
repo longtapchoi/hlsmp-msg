@@ -1,0 +1,28 @@
+name: Build HLSMP-MSG
+
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up JDK 21
+        uses: actions/setup-java@v4
+        with:
+          java-version: '21'
+          distribution: 'temurin'
+
+      - name: Build with Maven
+        run: mvn package -B
+
+      - name: Upload JAR
+        uses: actions/upload-artifact@v4
+        with:
+          name: HLSMP-MSG
+          path: target/HLSMP-MSG-*.jar
+          if-no-files-found: error
